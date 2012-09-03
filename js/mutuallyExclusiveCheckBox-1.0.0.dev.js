@@ -6,7 +6,7 @@
 			keys = $.fn.mutuallyExclusiveCheckBox.Keys,        
 			ar = keys[options.Key];
 			
-        if (ar === null) {
+        if (typeof ar === "undefined") {
             ar = keys[options.Key] = [];
         }
         ar.push($input);
